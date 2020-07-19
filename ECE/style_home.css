@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding:0;
+
+}
+    .fixed-header, .fixed-footer{
+      margin: 0;
+      padding:0;
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+
+    }
+    .fixed-header{
+        top: 0;
+      	text-align: right;
+        clear: none;
+        float: right;
+        background-color:#87ceeb;
+
+    }
+    .fixed-footer{
+        bottom: 0;
+        height:130px;
+    }
+    .container{
+        clear: none;
+        float: left;
+         /* Center the DIV horizontally */
+    }
+    .container_head{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .roller{
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      background-color:#87ceeb ;
+      color:  white;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+nav > a:hover{
+  background-color: #c5cf7f;
+}
+    .foot{
+    	text-align: center;
+    	margin-top: 115px;
+    	width: 1545px;
+    }
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .mySlides {display:none;}
+
+    ul {
+    margin-top: 0px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 32px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+
+
+ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+ul li:nth-child(5) a:before {
+  background: #FF1493;
+}
+ ul li:nth-child(6) a:before {
+  background: #c4302b;
+}
+ul li:nth-child(9) a:before {
+  background: #7DBBE6;
+}
+ul li:nth-child(11) a:before {
+  background: #D44638;
+}
